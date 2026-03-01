@@ -1,1 +1,55 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Cyberpunk Mobile OS</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Welcome to Cyberpunk Mobile OS</h1>\n    </header>\n    <main>\n        <section>\n            <h2>Features</h2>\n            <p>Experience the future with our cutting-edge mobile operating system.</p>\n        </section>\n        <section>\n            <h2>Download</h2>\n            <a href="download.html">Click here to download</a>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Cyberpunk Mobile OS</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile OS Interface</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .homescreen { display: flex; flex-wrap: wrap; padding: 10px; background-color: #f5f5f5; }
+        .app { width: 25%; text-align: center; margin-bottom: 10px; }
+        .dock { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            background-color: #fff; 
+            border-top: 1px solid #ccc; 
+            display: flex; justify-content: space-around; padding: 10px; 
+        }
+        .notification-center { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            background-color: #333; 
+            color: white; 
+            padding: 10px; 
+            display: none; 
+        }
+        .app-launcher { display: none; padding: 10px; background: #fff; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <div class="notification-center" id="notificationCenter">Notifications</div>
+    <div class="homescreen">
+        <div class="app">App 1</div>
+        <div class="app">App 2</div>
+        <div class="app">App 3</div>
+        <div class="app">App 4</div>
+    </div>
+    <div class="dock">
+        <div>Home</div>
+        <div>Search</div>
+        <div>Apps</div>
+        <div>Settings</div>
+    </div>
+    <script>
+        // Example Script for Notification Center
+        function toggleNotificationCenter() {
+            const notificationCenter = document.getElementById('notificationCenter');
+            notificationCenter.style.display = notificationCenter.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
